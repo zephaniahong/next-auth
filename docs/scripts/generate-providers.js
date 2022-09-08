@@ -16,6 +16,6 @@ const result = files.reduce((acc, file) => {
 }, {})
 
 fs.writeFileSync(
-  path.join(process.cwd(), "providers.json"),
+  path.join(process.cwd(), "providers"),
   JSON.stringify(result, null, 2)
 )
